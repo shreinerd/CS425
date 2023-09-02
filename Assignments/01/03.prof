@@ -1,0 +1,492 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 32.04      0.86     0.86 168334452     0.00     0.00  Transform::float4::perspectiveDivide() const
+ 20.93      1.43     0.56 673337808     0.00     0.00  Transform::float4::dot(Vertex const&) const
+  8.52      1.66     0.23 168334452     0.00     0.00  Transform::operator*(Vertex const&)
+  7.96      1.88     0.21 28055742     0.00     0.00  computePerimeter(Face const&, std::span<Vertex, 18446744073709551615ul> const&)
+  6.85      2.06     0.18 84167226     0.00     0.00  distance(Vertex const&, Vertex const&)
+  5.19      2.20     0.14 168334452     0.00     0.00  transform(Vertex const&)
+  4.44      2.32     0.12 28055742     0.00     0.00  decltype (::new ((void*)(0)) Face((declval<Face>)())) std::construct_at<Face, Face>(Face*, Face&&)
+  2.41      2.38     0.07 168334452     0.00     0.00  std::span<Vertex, 18446744073709551615ul>::operator[](unsigned long) const
+  1.85      2.44     0.05        1    50.00   357.50  readData(char const*, std::span<Vertex, 18446744073709551615ul>&, std::vector<Face, std::allocator<Face> >&)
+  1.67      2.48     0.04 28055742     0.00     0.00  Face& std::vector<Face, std::allocator<Face> >::emplace_back<Face>(Face&&)
+  1.30      2.52     0.04 56111484     0.00     0.00  __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::__normal_iterator(Face* const&)
+  1.11      2.54     0.03 28055742     0.00     0.00  __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::operator-(long) const
+  1.11      2.58     0.03 28055742     0.00     0.00  void std::allocator_traits<std::allocator<Face> >::construct<Face, Face>(std::allocator<Face>&, Face*, Face&&)
+  1.11      2.60     0.03                             main
+  0.93      2.63     0.03        1    25.00    25.00  std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::~_Vector_impl()
+  0.74      2.65     0.02 28055742     0.00     0.00  std::vector<Face, std::allocator<Face> >::end()
+  0.37      2.66     0.01 84167226     0.00     0.00  Face&& std::forward<Face>(std::remove_reference<Face>::type&)
+  0.37      2.67     0.01 28055742     0.00     0.00  __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::operator*() const
+  0.19      2.67     0.01 84167226     0.00     0.00  std::sqrt(float)
+  0.19      2.68     0.01 28055742     0.00     0.00  std::vector<Face, std::allocator<Face> >::operator[](unsigned long)
+  0.19      2.69     0.01        1     5.00     5.00  Transform::Transform(Transform::float4, Transform::float4, Transform::float4, Transform::float4)
+  0.19      2.69     0.01        1     5.00     5.00  std::allocator_traits<std::allocator<Face> >::deallocate(std::allocator<Face>&, Face*, unsigned long)
+  0.19      2.69     0.01        1     5.00     5.00  Vertex* std::to_address<Vertex>(Vertex*)
+  0.19      2.70     0.01                             _GLOBAL__sub_I__Z8readDataPKcRSt4spanI6VertexLm18446744073709551615EERSt6vectorI4FaceSaIS6_EE
+  0.00      2.70     0.00 28055744     0.00     0.00  std::vector<Face, std::allocator<Face> >::size() const
+  0.00      2.70     0.00 28055742     0.00     0.00  std::vector<Face, std::allocator<Face> >::back()
+  0.00      2.70     0.00 28055742     0.00     0.00  operator new(unsigned long, void*)
+  0.00      2.70     0.00        4     0.00     0.00  Transform::float4::float4(float, float, float, float)
+  0.00      2.70     0.00        3     0.00     0.00  Face* std::__niter_base<Face*>(Face*)
+  0.00      2.70     0.00        3     0.00     0.00  std::is_constant_evaluated()
+  0.00      2.70     0.00        2     0.00     2.50  std::_Vector_base<Face, std::allocator<Face> >::_M_deallocate(Face*, unsigned long)
+  0.00      2.70     0.00        2     0.00     0.00  std::_Vector_base<Face, std::allocator<Face> >::_M_get_Tp_allocator()
+  0.00      2.70     0.00        1     0.00     5.00  __static_initialization_and_destruction_0(int, int)
+  0.00      2.70     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<Face>::deallocate(Face*, unsigned long)
+  0.00      2.70     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<Face>::allocate(unsigned long, void const*)
+  0.00      2.70     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<Face>::new_allocator()
+  0.00      2.70     0.00        1     0.00     0.00  __gnu_cxx::new_allocator<Face>::_M_max_size() const
+  0.00      2.70     0.00        1     0.00     0.00  std::_Vector_base<Face, std::allocator<Face> >::_M_get_Tp_allocator() const
+  0.00      2.70     0.00        1     0.00     0.00  std::vector<Face, std::allocator<Face> >::capacity() const
+  0.00      2.70     0.00        1     0.00     0.00  std::vector<Face, std::allocator<Face> >::max_size() const
+  0.00      2.70     0.00        1     0.00     0.00  std::allocator<Face>::allocator()
+  0.00      2.70     0.00        1     0.00     0.00  std::allocator<Face>::~allocator()
+  0.00      2.70     0.00        1     0.00     0.00  void std::_Destroy_aux<true>::__destroy<Face*>(Face*, Face*)
+  0.00      2.70     0.00        1     0.00     0.00  std::_Vector_base<Face, std::allocator<Face> >::_M_allocate(unsigned long)
+  0.00      2.70     0.00        1     0.00     0.00  std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::_Vector_impl()
+  0.00      2.70     0.00        1     0.00     0.00  std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl_data::_Vector_impl_data()
+  0.00      2.70     0.00        1     0.00     0.00  std::_Vector_base<Face, std::allocator<Face> >::_Vector_base()
+  0.00      2.70     0.00        1     0.00    27.50  std::_Vector_base<Face, std::allocator<Face> >::~_Vector_base()
+  0.00      2.70     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<Face> >::allocate(std::allocator<Face>&, unsigned long)
+  0.00      2.70     0.00        1     0.00     0.00  std::allocator_traits<std::allocator<Face> >::max_size(std::allocator<Face> const&)
+  0.00      2.70     0.00        1     0.00     5.00  std::span<Vertex, 18446744073709551615ul>::span<Vertex*>(Vertex*, unsigned long)
+  0.00      2.70     0.00        1     0.00     0.00  std::vector<Face, std::allocator<Face> >::_S_max_size(std::allocator<Face> const&)
+  0.00      2.70     0.00        1     0.00     0.00  std::vector<Face, std::allocator<Face> >::_S_relocate(Face*, Face*, Face*, std::allocator<Face>&)
+  0.00      2.70     0.00        1     0.00     0.00  std::vector<Face, std::allocator<Face> >::_S_do_relocate(Face*, Face*, Face*, std::allocator<Face>&, std::integral_constant<bool, true>)
+  0.00      2.70     0.00        1     0.00     2.50  std::vector<Face, std::allocator<Face> >::reserve(unsigned long)
+  0.00      2.70     0.00        1     0.00     0.00  std::vector<Face, std::allocator<Face> >::vector()
+  0.00      2.70     0.00        1     0.00    27.50  std::vector<Face, std::allocator<Face> >::~vector()
+  0.00      2.70     0.00        1     0.00     0.00  std::__detail::__extent_storage<18446744073709551615ul>::__extent_storage(unsigned long)
+  0.00      2.70     0.00        1     0.00     0.00  Face* std::__relocate_a<Face*, Face*, std::allocator<Face> >(Face*, Face*, Face*, std::allocator<Face>&)
+  0.00      2.70     0.00        1     0.00     0.00  Vertex* std::__to_address<Vertex>(Vertex*)
+  0.00      2.70     0.00        1     0.00     0.00  std::enable_if<std::__is_bitwise_relocatable<Face, void>::value, Face*>::type std::__relocate_a_1<Face, Face>(Face*, Face*, Face*, std::allocator<Face>&)
+  0.00      2.70     0.00        1     0.00     0.00  unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+  0.00      2.70     0.00        1     0.00     0.00  void std::_Destroy<Face*>(Face*, Face*)
+  0.00      2.70     0.00        1     0.00     0.00  void std::_Destroy<Face*, Face>(Face*, Face*, std::allocator<Face>&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.37% of 2.70 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     99.6    0.03    2.66                 main [1]
+                0.21    2.06 28055742/28055742     computePerimeter(Face const&, std::span<Vertex, 18446744073709551615ul> const&) [2]
+                0.05    0.31       1/1           readData(char const*, std::span<Vertex, 18446744073709551615ul>&, std::vector<Face, std::allocator<Face> >&) [7]
+                0.00    0.03       1/1           std::vector<Face, std::allocator<Face> >::~vector() [18]
+                0.01    0.00 28055742/28055742     std::vector<Face, std::allocator<Face> >::operator[](unsigned long) [24]
+                0.00    0.00 28055743/28055744     std::vector<Face, std::allocator<Face> >::size() const [38]
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::vector() [63]
+-----------------------------------------------
+                0.21    2.06 28055742/28055742     main [1]
+[2]     84.1    0.21    2.06 28055742         computePerimeter(Face const&, std::span<Vertex, 18446744073709551615ul> const&) [2]
+                0.14    1.66 168334452/168334452     transform(Vertex const&) [3]
+                0.18    0.01 84167226/84167226     distance(Vertex const&, Vertex const&) [9]
+                0.07    0.00 168334452/168334452     std::span<Vertex, 18446744073709551615ul>::operator[](unsigned long) const [13]
+-----------------------------------------------
+                0.14    1.66 168334452/168334452     computePerimeter(Face const&, std::span<Vertex, 18446744073709551615ul> const&) [2]
+[3]     66.7    0.14    1.66 168334452         transform(Vertex const&) [3]
+                0.23    1.43 168334452/168334452     Transform::operator*(Vertex const&) [4]
+-----------------------------------------------
+                0.23    1.43 168334452/168334452     transform(Vertex const&) [3]
+[4]     61.5    0.23    1.43 168334452         Transform::operator*(Vertex const&) [4]
+                0.86    0.00 168334452/168334452     Transform::float4::perspectiveDivide() const [5]
+                0.56    0.00 673337808/673337808     Transform::float4::dot(Vertex const&) const [6]
+-----------------------------------------------
+                0.86    0.00 168334452/168334452     Transform::operator*(Vertex const&) [4]
+[5]     32.0    0.86    0.00 168334452         Transform::float4::perspectiveDivide() const [5]
+-----------------------------------------------
+                0.56    0.00 673337808/673337808     Transform::operator*(Vertex const&) [4]
+[6]     20.9    0.56    0.00 673337808         Transform::float4::dot(Vertex const&) const [6]
+-----------------------------------------------
+                0.05    0.31       1/1           main [1]
+[7]     13.2    0.05    0.31       1         readData(char const*, std::span<Vertex, 18446744073709551615ul>&, std::vector<Face, std::allocator<Face> >&) [7]
+                0.04    0.26 28055742/28055742     Face& std::vector<Face, std::allocator<Face> >::emplace_back<Face>(Face&&) [8]
+                0.00    0.01       1/1           std::span<Vertex, 18446744073709551615ul>::span<Vertex*>(Vertex*, unsigned long) [29]
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::reserve(unsigned long) [31]
+-----------------------------------------------
+                0.04    0.26 28055742/28055742     readData(char const*, std::span<Vertex, 18446744073709551615ul>&, std::vector<Face, std::allocator<Face> >&) [7]
+[8]     11.1    0.04    0.26 28055742         Face& std::vector<Face, std::allocator<Face> >::emplace_back<Face>(Face&&) [8]
+                0.03    0.13 28055742/28055742     void std::allocator_traits<std::allocator<Face> >::construct<Face, Face>(std::allocator<Face>&, Face*, Face&&) [10]
+                0.00    0.10 28055742/28055742     std::vector<Face, std::allocator<Face> >::back() [12]
+                0.00    0.00 28055742/84167226     Face&& std::forward<Face>(std::remove_reference<Face>::type&) [20]
+-----------------------------------------------
+                0.18    0.01 84167226/84167226     computePerimeter(Face const&, std::span<Vertex, 18446744073709551615ul> const&) [2]
+[9]      7.0    0.18    0.01 84167226         distance(Vertex const&, Vertex const&) [9]
+                0.01    0.00 84167226/84167226     std::sqrt(float) [23]
+-----------------------------------------------
+                0.03    0.13 28055742/28055742     Face& std::vector<Face, std::allocator<Face> >::emplace_back<Face>(Face&&) [8]
+[10]     5.8    0.03    0.13 28055742         void std::allocator_traits<std::allocator<Face> >::construct<Face, Face>(std::allocator<Face>&, Face*, Face&&) [10]
+                0.12    0.00 28055742/28055742     decltype (::new ((void*)(0)) Face((declval<Face>)())) std::construct_at<Face, Face>(Face*, Face&&) [11]
+                0.00    0.00 28055742/84167226     Face&& std::forward<Face>(std::remove_reference<Face>::type&) [20]
+-----------------------------------------------
+                0.12    0.00 28055742/28055742     void std::allocator_traits<std::allocator<Face> >::construct<Face, Face>(std::allocator<Face>&, Face*, Face&&) [10]
+[11]     4.6    0.12    0.00 28055742         decltype (::new ((void*)(0)) Face((declval<Face>)())) std::construct_at<Face, Face>(Face*, Face&&) [11]
+                0.00    0.00 28055742/84167226     Face&& std::forward<Face>(std::remove_reference<Face>::type&) [20]
+                0.00    0.00 28055742/28055742     operator new(unsigned long, void*) [39]
+-----------------------------------------------
+                0.00    0.10 28055742/28055742     Face& std::vector<Face, std::allocator<Face> >::emplace_back<Face>(Face&&) [8]
+[12]     3.5    0.00    0.10 28055742         std::vector<Face, std::allocator<Face> >::back() [12]
+                0.03    0.02 28055742/28055742     __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::operator-(long) const [14]
+                0.02    0.02 28055742/28055742     std::vector<Face, std::allocator<Face> >::end() [15]
+                0.01    0.00 28055742/28055742     __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::operator*() const [21]
+-----------------------------------------------
+                0.07    0.00 168334452/168334452     computePerimeter(Face const&, std::span<Vertex, 18446744073709551615ul> const&) [2]
+[13]     2.4    0.07    0.00 168334452         std::span<Vertex, 18446744073709551615ul>::operator[](unsigned long) const [13]
+-----------------------------------------------
+                0.03    0.02 28055742/28055742     std::vector<Face, std::allocator<Face> >::back() [12]
+[14]     1.8    0.03    0.02 28055742         __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::operator-(long) const [14]
+                0.02    0.00 28055742/56111484     __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::__normal_iterator(Face* const&) [16]
+-----------------------------------------------
+                0.02    0.02 28055742/28055742     std::vector<Face, std::allocator<Face> >::back() [12]
+[15]     1.4    0.02    0.02 28055742         std::vector<Face, std::allocator<Face> >::end() [15]
+                0.02    0.00 28055742/56111484     __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::__normal_iterator(Face* const&) [16]
+-----------------------------------------------
+                0.02    0.00 28055742/56111484     std::vector<Face, std::allocator<Face> >::end() [15]
+                0.02    0.00 28055742/56111484     __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::operator-(long) const [14]
+[16]     1.3    0.04    0.00 56111484         __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::__normal_iterator(Face* const&) [16]
+-----------------------------------------------
+                0.00    0.03       1/1           std::vector<Face, std::allocator<Face> >::~vector() [18]
+[17]     1.0    0.00    0.03       1         std::_Vector_base<Face, std::allocator<Face> >::~_Vector_base() [17]
+                0.03    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::~_Vector_impl() [19]
+                0.00    0.00       1/2           std::_Vector_base<Face, std::allocator<Face> >::_M_deallocate(Face*, unsigned long) [25]
+-----------------------------------------------
+                0.00    0.03       1/1           main [1]
+[18]     1.0    0.00    0.03       1         std::vector<Face, std::allocator<Face> >::~vector() [18]
+                0.00    0.03       1/1           std::_Vector_base<Face, std::allocator<Face> >::~_Vector_base() [17]
+                0.00    0.00       1/2           std::_Vector_base<Face, std::allocator<Face> >::_M_get_Tp_allocator() [43]
+                0.00    0.00       1/1           void std::_Destroy<Face*, Face>(Face*, Face*, std::allocator<Face>&) [70]
+-----------------------------------------------
+                0.03    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::~_Vector_base() [17]
+[19]     0.9    0.03    0.00       1         std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::~_Vector_impl() [19]
+                0.00    0.00       1/1           std::allocator<Face>::~allocator() [52]
+-----------------------------------------------
+                0.00    0.00 28055742/84167226     Face& std::vector<Face, std::allocator<Face> >::emplace_back<Face>(Face&&) [8]
+                0.00    0.00 28055742/84167226     decltype (::new ((void*)(0)) Face((declval<Face>)())) std::construct_at<Face, Face>(Face*, Face&&) [11]
+                0.00    0.00 28055742/84167226     void std::allocator_traits<std::allocator<Face> >::construct<Face, Face>(std::allocator<Face>&, Face*, Face&&) [10]
+[20]     0.4    0.01    0.00 84167226         Face&& std::forward<Face>(std::remove_reference<Face>::type&) [20]
+-----------------------------------------------
+                0.01    0.00 28055742/28055742     std::vector<Face, std::allocator<Face> >::back() [12]
+[21]     0.4    0.01    0.00 28055742         __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::operator*() const [21]
+-----------------------------------------------
+                                                 <spontaneous>
+[22]     0.4    0.01    0.01                 _GLOBAL__sub_I__Z8readDataPKcRSt4spanI6VertexLm18446744073709551615EERSt6vectorI4FaceSaIS6_EE [22]
+                0.00    0.01       1/1           __static_initialization_and_destruction_0(int, int) [26]
+-----------------------------------------------
+                0.01    0.00 84167226/84167226     distance(Vertex const&, Vertex const&) [9]
+[23]     0.2    0.01    0.00 84167226         std::sqrt(float) [23]
+-----------------------------------------------
+                0.01    0.00 28055742/28055742     main [1]
+[24]     0.2    0.01    0.00 28055742         std::vector<Face, std::allocator<Face> >::operator[](unsigned long) [24]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<Face, std::allocator<Face> >::reserve(unsigned long) [31]
+                0.00    0.00       1/2           std::_Vector_base<Face, std::allocator<Face> >::~_Vector_base() [17]
+[25]     0.2    0.00    0.01       2         std::_Vector_base<Face, std::allocator<Face> >::_M_deallocate(Face*, unsigned long) [25]
+                0.01    0.00       1/1           std::allocator_traits<std::allocator<Face> >::deallocate(std::allocator<Face>&, Face*, unsigned long) [28]
+-----------------------------------------------
+                0.00    0.01       1/1           _GLOBAL__sub_I__Z8readDataPKcRSt4spanI6VertexLm18446744073709551615EERSt6vectorI4FaceSaIS6_EE [22]
+[26]     0.2    0.00    0.01       1         __static_initialization_and_destruction_0(int, int) [26]
+                0.01    0.00       1/1           Transform::Transform(Transform::float4, Transform::float4, Transform::float4, Transform::float4) [27]
+                0.00    0.00       4/4           Transform::float4::float4(float, float, float, float) [40]
+-----------------------------------------------
+                0.01    0.00       1/1           __static_initialization_and_destruction_0(int, int) [26]
+[27]     0.2    0.01    0.00       1         Transform::Transform(Transform::float4, Transform::float4, Transform::float4, Transform::float4) [27]
+-----------------------------------------------
+                0.01    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_M_deallocate(Face*, unsigned long) [25]
+[28]     0.2    0.01    0.00       1         std::allocator_traits<std::allocator<Face> >::deallocate(std::allocator<Face>&, Face*, unsigned long) [28]
+                0.00    0.00       1/3           std::is_constant_evaluated() [42]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<Face>::deallocate(Face*, unsigned long) [44]
+-----------------------------------------------
+                0.00    0.01       1/1           readData(char const*, std::span<Vertex, 18446744073709551615ul>&, std::vector<Face, std::allocator<Face> >&) [7]
+[29]     0.2    0.00    0.01       1         std::span<Vertex, 18446744073709551615ul>::span<Vertex*>(Vertex*, unsigned long) [29]
+                0.01    0.00       1/1           Vertex* std::to_address<Vertex>(Vertex*) [30]
+                0.00    0.00       1/1           std::__detail::__extent_storage<18446744073709551615ul>::__extent_storage(unsigned long) [64]
+-----------------------------------------------
+                0.01    0.00       1/1           std::span<Vertex, 18446744073709551615ul>::span<Vertex*>(Vertex*, unsigned long) [29]
+[30]     0.2    0.01    0.00       1         Vertex* std::to_address<Vertex>(Vertex*) [30]
+                0.00    0.00       1/1           Vertex* std::__to_address<Vertex>(Vertex*) [66]
+-----------------------------------------------
+                0.00    0.00       1/1           readData(char const*, std::span<Vertex, 18446744073709551615ul>&, std::vector<Face, std::allocator<Face> >&) [7]
+[31]     0.1    0.00    0.00       1         std::vector<Face, std::allocator<Face> >::reserve(unsigned long) [31]
+                0.00    0.00       1/2           std::_Vector_base<Face, std::allocator<Face> >::_M_deallocate(Face*, unsigned long) [25]
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::max_size() const [50]
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::capacity() const [49]
+                0.00    0.00       1/28055744     std::vector<Face, std::allocator<Face> >::size() const [38]
+                0.00    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_M_allocate(unsigned long) [54]
+                0.00    0.00       1/2           std::_Vector_base<Face, std::allocator<Face> >::_M_get_Tp_allocator() [43]
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::_S_relocate(Face*, Face*, Face*, std::allocator<Face>&) [61]
+-----------------------------------------------
+                0.00    0.00       1/28055744     std::vector<Face, std::allocator<Face> >::reserve(unsigned long) [31]
+                0.00    0.00 28055743/28055744     main [1]
+[38]     0.0    0.00    0.00 28055744         std::vector<Face, std::allocator<Face> >::size() const [38]
+-----------------------------------------------
+                0.00    0.00 28055742/28055742     decltype (::new ((void*)(0)) Face((declval<Face>)())) std::construct_at<Face, Face>(Face*, Face&&) [11]
+[39]     0.0    0.00    0.00 28055742         operator new(unsigned long, void*) [39]
+-----------------------------------------------
+                0.00    0.00       4/4           __static_initialization_and_destruction_0(int, int) [26]
+[40]     0.0    0.00    0.00       4         Transform::float4::float4(float, float, float, float) [40]
+-----------------------------------------------
+                0.00    0.00       3/3           Face* std::__relocate_a<Face*, Face*, std::allocator<Face> >(Face*, Face*, Face*, std::allocator<Face>&) [65]
+[41]     0.0    0.00    0.00       3         Face* std::__niter_base<Face*>(Face*) [41]
+-----------------------------------------------
+                0.00    0.00       1/3           std::allocator_traits<std::allocator<Face> >::allocate(std::allocator<Face>&, unsigned long) [58]
+                0.00    0.00       1/3           std::allocator_traits<std::allocator<Face> >::deallocate(std::allocator<Face>&, Face*, unsigned long) [28]
+                0.00    0.00       1/3           void std::_Destroy<Face*>(Face*, Face*) [69]
+[42]     0.0    0.00    0.00       3         std::is_constant_evaluated() [42]
+-----------------------------------------------
+                0.00    0.00       1/2           std::vector<Face, std::allocator<Face> >::reserve(unsigned long) [31]
+                0.00    0.00       1/2           std::vector<Face, std::allocator<Face> >::~vector() [18]
+[43]     0.0    0.00    0.00       2         std::_Vector_base<Face, std::allocator<Face> >::_M_get_Tp_allocator() [43]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<Face> >::deallocate(std::allocator<Face>&, Face*, unsigned long) [28]
+[44]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<Face>::deallocate(Face*, unsigned long) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<Face> >::allocate(std::allocator<Face>&, unsigned long) [58]
+[45]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<Face>::allocate(unsigned long, void const*) [45]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<Face>::_M_max_size() const [47]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<Face>::allocator() [51]
+[46]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<Face>::new_allocator() [46]
+-----------------------------------------------
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<Face>::allocate(unsigned long, void const*) [45]
+[47]     0.0    0.00    0.00       1         __gnu_cxx::new_allocator<Face>::_M_max_size() const [47]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::max_size() const [50]
+[48]     0.0    0.00    0.00       1         std::_Vector_base<Face, std::allocator<Face> >::_M_get_Tp_allocator() const [48]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::reserve(unsigned long) [31]
+[49]     0.0    0.00    0.00       1         std::vector<Face, std::allocator<Face> >::capacity() const [49]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::reserve(unsigned long) [31]
+[50]     0.0    0.00    0.00       1         std::vector<Face, std::allocator<Face> >::max_size() const [50]
+                0.00    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_M_get_Tp_allocator() const [48]
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::_S_max_size(std::allocator<Face> const&) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::_Vector_impl() [55]
+[51]     0.0    0.00    0.00       1         std::allocator<Face>::allocator() [51]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<Face>::new_allocator() [46]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::~_Vector_impl() [19]
+[52]     0.0    0.00    0.00       1         std::allocator<Face>::~allocator() [52]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<Face*>(Face*, Face*) [69]
+[53]     0.0    0.00    0.00       1         void std::_Destroy_aux<true>::__destroy<Face*>(Face*, Face*) [53]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::reserve(unsigned long) [31]
+[54]     0.0    0.00    0.00       1         std::_Vector_base<Face, std::allocator<Face> >::_M_allocate(unsigned long) [54]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<Face> >::allocate(std::allocator<Face>&, unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_Vector_base() [57]
+[55]     0.0    0.00    0.00       1         std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::_Vector_impl() [55]
+                0.00    0.00       1/1           std::allocator<Face>::allocator() [51]
+                0.00    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl_data::_Vector_impl_data() [56]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::_Vector_impl() [55]
+[56]     0.0    0.00    0.00       1         std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl_data::_Vector_impl_data() [56]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::vector() [63]
+[57]     0.0    0.00    0.00       1         std::_Vector_base<Face, std::allocator<Face> >::_Vector_base() [57]
+                0.00    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::_Vector_impl() [55]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_M_allocate(unsigned long) [54]
+[58]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<Face> >::allocate(std::allocator<Face>&, unsigned long) [58]
+                0.00    0.00       1/3           std::is_constant_evaluated() [42]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<Face>::allocate(unsigned long, void const*) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::_S_max_size(std::allocator<Face> const&) [60]
+[59]     0.0    0.00    0.00       1         std::allocator_traits<std::allocator<Face> >::max_size(std::allocator<Face> const&) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::max_size() const [50]
+[60]     0.0    0.00    0.00       1         std::vector<Face, std::allocator<Face> >::_S_max_size(std::allocator<Face> const&) [60]
+                0.00    0.00       1/1           std::allocator_traits<std::allocator<Face> >::max_size(std::allocator<Face> const&) [59]
+                0.00    0.00       1/1           unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [68]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::reserve(unsigned long) [31]
+[61]     0.0    0.00    0.00       1         std::vector<Face, std::allocator<Face> >::_S_relocate(Face*, Face*, Face*, std::allocator<Face>&) [61]
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::_S_do_relocate(Face*, Face*, Face*, std::allocator<Face>&, std::integral_constant<bool, true>) [62]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::_S_relocate(Face*, Face*, Face*, std::allocator<Face>&) [61]
+[62]     0.0    0.00    0.00       1         std::vector<Face, std::allocator<Face> >::_S_do_relocate(Face*, Face*, Face*, std::allocator<Face>&, std::integral_constant<bool, true>) [62]
+                0.00    0.00       1/1           Face* std::__relocate_a<Face*, Face*, std::allocator<Face> >(Face*, Face*, Face*, std::allocator<Face>&) [65]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[63]     0.0    0.00    0.00       1         std::vector<Face, std::allocator<Face> >::vector() [63]
+                0.00    0.00       1/1           std::_Vector_base<Face, std::allocator<Face> >::_Vector_base() [57]
+-----------------------------------------------
+                0.00    0.00       1/1           std::span<Vertex, 18446744073709551615ul>::span<Vertex*>(Vertex*, unsigned long) [29]
+[64]     0.0    0.00    0.00       1         std::__detail::__extent_storage<18446744073709551615ul>::__extent_storage(unsigned long) [64]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::_S_do_relocate(Face*, Face*, Face*, std::allocator<Face>&, std::integral_constant<bool, true>) [62]
+[65]     0.0    0.00    0.00       1         Face* std::__relocate_a<Face*, Face*, std::allocator<Face> >(Face*, Face*, Face*, std::allocator<Face>&) [65]
+                0.00    0.00       3/3           Face* std::__niter_base<Face*>(Face*) [41]
+                0.00    0.00       1/1           std::enable_if<std::__is_bitwise_relocatable<Face, void>::value, Face*>::type std::__relocate_a_1<Face, Face>(Face*, Face*, Face*, std::allocator<Face>&) [67]
+-----------------------------------------------
+                0.00    0.00       1/1           Vertex* std::to_address<Vertex>(Vertex*) [30]
+[66]     0.0    0.00    0.00       1         Vertex* std::__to_address<Vertex>(Vertex*) [66]
+-----------------------------------------------
+                0.00    0.00       1/1           Face* std::__relocate_a<Face*, Face*, std::allocator<Face> >(Face*, Face*, Face*, std::allocator<Face>&) [65]
+[67]     0.0    0.00    0.00       1         std::enable_if<std::__is_bitwise_relocatable<Face, void>::value, Face*>::type std::__relocate_a_1<Face, Face>(Face*, Face*, Face*, std::allocator<Face>&) [67]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::_S_max_size(std::allocator<Face> const&) [60]
+[68]     0.0    0.00    0.00       1         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [68]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<Face*, Face>(Face*, Face*, std::allocator<Face>&) [70]
+[69]     0.0    0.00    0.00       1         void std::_Destroy<Face*>(Face*, Face*) [69]
+                0.00    0.00       1/3           std::is_constant_evaluated() [42]
+                0.00    0.00       1/1           void std::_Destroy_aux<true>::__destroy<Face*>(Face*, Face*) [53]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<Face, std::allocator<Face> >::~vector() [18]
+[70]     0.0    0.00    0.00       1         void std::_Destroy<Face*, Face>(Face*, Face*, std::allocator<Face>&) [70]
+                0.00    0.00       1/1           void std::_Destroy<Face*>(Face*, Face*) [69]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [22] _GLOBAL__sub_I__Z8readDataPKcRSt4spanI6VertexLm18446744073709551615EERSt6vectorI4FaceSaIS6_EE [50] std::vector<Face, std::allocator<Face> >::max_size() const [12] std::vector<Face, std::allocator<Face> >::back()
+   [2] computePerimeter(Face const&, std::span<Vertex, 18446744073709551615ul> const&) [51] std::allocator<Face>::allocator() [31] std::vector<Face, std::allocator<Face> >::reserve(unsigned long)
+  [26] __static_initialization_and_destruction_0(int, int) [52] std::allocator<Face>::~allocator() [63] std::vector<Face, std::allocator<Face> >::vector()
+   [9] distance(Vertex const&, Vertex const&) [53] void std::_Destroy_aux<true>::__destroy<Face*>(Face*, Face*) [18] std::vector<Face, std::allocator<Face> >::~vector()
+   [7] readData(char const*, std::span<Vertex, 18446744073709551615ul>&, std::vector<Face, std::allocator<Face> >&) [54] std::_Vector_base<Face, std::allocator<Face> >::_M_allocate(unsigned long) [24] std::vector<Face, std::allocator<Face> >::operator[](unsigned long)
+   [3] transform(Vertex const&) [55] std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::_Vector_impl() [64] std::__detail::__extent_storage<18446744073709551615ul>::__extent_storage(unsigned long)
+  [40] Transform::float4::float4(float, float, float, float) [19] std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl::~_Vector_impl() [30] Vertex* std::to_address<Vertex>(Vertex*)
+  [27] Transform::Transform(Transform::float4, Transform::float4, Transform::float4, Transform::float4) [25] std::_Vector_base<Face, std::allocator<Face> >::_M_deallocate(Face*, unsigned long) [41] Face* std::__niter_base<Face*>(Face*)
+   [4] Transform::operator*(Vertex const&) [56] std::_Vector_base<Face, std::allocator<Face> >::_Vector_impl_data::_Vector_impl_data() [65] Face* std::__relocate_a<Face*, Face*, std::allocator<Face> >(Face*, Face*, Face*, std::allocator<Face>&)
+  [44] __gnu_cxx::new_allocator<Face>::deallocate(Face*, unsigned long) [43] std::_Vector_base<Face, std::allocator<Face> >::_M_get_Tp_allocator() [66] Vertex* std::__to_address<Vertex>(Vertex*)
+  [45] __gnu_cxx::new_allocator<Face>::allocate(unsigned long, void const*) [57] std::_Vector_base<Face, std::allocator<Face> >::_Vector_base() [11] decltype (::new ((void*)(0)) Face((declval<Face>)())) std::construct_at<Face, Face>(Face*, Face&&)
+  [46] __gnu_cxx::new_allocator<Face>::new_allocator() [17] std::_Vector_base<Face, std::allocator<Face> >::~_Vector_base() [67] std::enable_if<std::__is_bitwise_relocatable<Face, void>::value, Face*>::type std::__relocate_a_1<Face, Face>(Face*, Face*, Face*, std::allocator<Face>&)
+  [16] __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::__normal_iterator(Face* const&) [28] std::allocator_traits<std::allocator<Face> >::deallocate(std::allocator<Face>&, Face*, unsigned long) [42] std::is_constant_evaluated()
+   [5] Transform::float4::perspectiveDivide() const [58] std::allocator_traits<std::allocator<Face> >::allocate(std::allocator<Face>&, unsigned long) [68] unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&)
+   [6] Transform::float4::dot(Vertex const&) const [59] std::allocator_traits<std::allocator<Face> >::max_size(std::allocator<Face> const&) [23] std::sqrt(float)
+  [47] __gnu_cxx::new_allocator<Face>::_M_max_size() const [10] void std::allocator_traits<std::allocator<Face> >::construct<Face, Face>(std::allocator<Face>&, Face*, Face&&) [20] Face&& std::forward<Face>(std::remove_reference<Face>::type&)
+  [21] __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::operator*() const [29] std::span<Vertex, 18446744073709551615ul>::span<Vertex*>(Vertex*, unsigned long) [69] void std::_Destroy<Face*>(Face*, Face*)
+  [14] __gnu_cxx::__normal_iterator<Face*, std::vector<Face, std::allocator<Face> > >::operator-(long) const [60] std::vector<Face, std::allocator<Face> >::_S_max_size(std::allocator<Face> const&) [70] void std::_Destroy<Face*, Face>(Face*, Face*, std::allocator<Face>&)
+  [48] std::_Vector_base<Face, std::allocator<Face> >::_M_get_Tp_allocator() const [61] std::vector<Face, std::allocator<Face> >::_S_relocate(Face*, Face*, Face*, std::allocator<Face>&) [39] operator new(unsigned long, void*)
+  [13] std::span<Vertex, 18446744073709551615ul>::operator[](unsigned long) const [8] Face& std::vector<Face, std::allocator<Face> >::emplace_back<Face>(Face&&) [1] main
+  [38] std::vector<Face, std::allocator<Face> >::size() const [62] std::vector<Face, std::allocator<Face> >::_S_do_relocate(Face*, Face*, Face*, std::allocator<Face>&, std::integral_constant<bool, true>)
+  [49] std::vector<Face, std::allocator<Face> >::capacity() const [15] std::vector<Face, std::allocator<Face> >::end()
