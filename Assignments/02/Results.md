@@ -7,3 +7,4 @@ Here's my table showing the improvements I did to make the application go faster
 | Version | Time | Speedup | Memory (KB) | Changes |
 | :-----: | ---- | :-----: | :------: | ------- |
 | [01](01.cpp) | 634.27s | &mdash; | 4532 | Initial version - no changes |
+| [02](02.cpp) | 116.74s | 5.43x | 4896 | Static threaded version |
