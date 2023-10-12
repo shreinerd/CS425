@@ -8,3 +8,4 @@ Here's my table showing the improvements I did to make the application go faster
 | :-----: | ---- | :-----: | :------: | ------- |
 | [01](01.cpp) | 634.27s | &mdash; | 4532 | Initial version - no changes |
 | [02](02.cpp) | 116.74s | 5.43x | 4896 | Static threaded version |
+| [03](03.cpp) | 46.34s | 13.68x | 4828 | Removed redundant vector copy |
