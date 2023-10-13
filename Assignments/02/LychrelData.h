@@ -142,7 +142,7 @@ class LychrelData {
     // Thread-safe multiple number retrieval function.  Returns true, storing
     //   as many available values (up to the requested value) in the <numbers>
     //   vector; or returns false, indicating no more data is available
-    bool getNext(size_t count, std::vector<Number>& numbers) {
+    bool getNext(size_t& count, std::vector<Number>& numbers) {
         size_t index;
         {
             std::lock_guard lock{_mutex};
@@ -164,6 +164,19 @@ class LychrelData {
             number.resize(end - start);
             number.assign(&_digits[start], &_digits[end]);
         }
+
+        return true;
+    }
+
+    bool getNext(size_t& count, size_t& start) {
+        std::lock_guard lock{_mutex};
+        start = _current;
+        if (start >= _size) { return false; }
+
+        if (start + count >= _size) {
+            count = _size - start;
+        }
+        _current += count;
 
         return true;
     }
